@@ -8,4 +8,4 @@ script:
 - dx find projects
 env:
   global:
-    secure: QPZ3kdlFOmvKAdqPqrUvx7Sv6495KcYQqV5h7xKia0LORpHkaY171zdSljKIit0KhdtO8vimRMTkWnUkJC/IMAueTriV6fOrt//zVIlxKnC6Pu/ffQsuMxK2Jv9XzBak7cRILDFygGNl8TNkWR3rKmFFDpF750PT3C/nqyFbKnE=
+    secure: F9lvxdWotkstJlNNjYAjFwf1RvU8lHd12U2Bq3CmQS09gNKPRNUQy68pch9qUIIyC0FHvHlZWhRbG8Z4e7Cu1hvEeO/K5UcUThuV2R+4EuZtl7d8DAdivLgl/tbueW/kD8xvRfjainWfKj39W3srJ01LhTl4PjtcqYYx0bPLIK0=
