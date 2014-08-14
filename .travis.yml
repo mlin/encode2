@@ -6,7 +6,7 @@ script:
 - wget https://wiki.dnanexus.com/images/files/dx-toolkit-current-ubuntu-12.04-amd64.tar.gz
 - tar zxf dx-toolkit-current-ubuntu-12.04-amd64.tar.gz
 - source dx-toolkit/environment
-- cd chip-seq2 && /bin/bash -ex /build_applets "ENCODE Travis PoC"
+- cd chip-seq2 && /bin/bash -ex build_applets "ENCODE Travis PoC"
 env:
   global:
   - secure: genJPlmyojCFMnBTJK+0Dg/gDj23CywcC0WkG5X0cXjnL5JUUSwPvwkwl2tYfYjprofDLFZSKncnwG6R0uLFcJkcrJIUd1HZyf2WN/oTfDXPQDlPspcIX6YDOPIcT/8/Cr+MlmFdMmPZZYOcNsNrx8Ctgusj5XCNjntpPmTFLAg=
