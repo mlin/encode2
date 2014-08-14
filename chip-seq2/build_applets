@@ -1,6 +1,6 @@
 #!/bin/bash
 
-applet_dest='ChIP-Seq Applets'
+applet_dest="${1:-ChIP-Seq Applets}"
 applets='hotspot_spot idr merge_bams pseudoreplicator sort_and_filter_bams spp spp_nodups wiggler'
 
 project=$(dx find projects --name "$applet_dest")

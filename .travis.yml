@@ -2,11 +2,12 @@ language: python
 python:
 - '2.7'
 script:
+- deactivate # disable Travis default virtualenv
 - wget https://wiki.dnanexus.com/images/files/dx-toolkit-current-ubuntu-12.04-amd64.tar.gz
 - tar zxf dx-toolkit-current-ubuntu-12.04-amd64.tar.gz
 - source dx-toolkit/environment
-- dx login --token $TRAVIS_DX_TOKEN --noprojects
-- dx find projects
+- chip-seq2/build_applets "ENCODE Travis PoC"
 env:
   global:
-  - secure: gznaOIZxhGcEhzf14J8eo3DBVE7W+urPf2r1YgVeLtxkaPDxZgighwXqOw5iHucpOhdR9lQbHj3S+iAHFcIr4rKqyFrrtHtopQeRzXNGEVCt9bmHU08t96+QmHsc/C9StVJY7GaNkTfo7xx7gN95XsexVL6rwX8+ULV+lSHA/rw=
+  - secure: genJPlmyojCFMnBTJK+0Dg/gDj23CywcC0WkG5X0cXjnL5JUUSwPvwkwl2tYfYjprofDLFZSKncnwG6R0uLFcJkcrJIUd1HZyf2WN/oTfDXPQDlPspcIX6YDOPIcT/8/Cr+MlmFdMmPZZYOcNsNrx8Ctgusj5XCNjntpPmTFLAg=
+# travis encrypt DX_AUTH_TOKEN=xxxx
