@@ -5,7 +5,8 @@ script:
 - wget https://wiki.dnanexus.com/images/files/dx-toolkit-current-ubuntu-12.04-amd64.tar.gz
 - tar zxf dx-toolkit-current-ubuntu-12.04-amd64.tar.gz
 - source dx-toolkit/environment
+- echo "$DX_SECURITY_CONTEXT"
 - dx find projects
 env:
   global:
-    secure: RjOD+g+HKq8m03PE3LhNs3iK6zEwQgoBrRATnr8FOlsIdeZqPt25qWXP9GwvxfLkmhKp2G8rNr7hWmXUlSuslr7+m/eTxmh27tq76T2/+KsReE9fSRca48DYHZItANBtgEJwWo59IPw4J970eQr5eGOmIsBRGcQtwZkrZc4MCTg=
+  - secure: BdDLPQE1yEiPrJGBSOMdkpL4Ua9x8VumbpR2vmvb3tid/EcquEUMthPSrH9NL8yK5/6M4U66kduY56VDhEfgy4PLviNyVqxWI5ZloQTvECFTAkNCOgm9smaoJ8kX8gHdvLLACCGfc0LNdYIRfvBT+Ie0jHyFNMGx0KIqDQkJU60=
